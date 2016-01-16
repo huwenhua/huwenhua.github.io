@@ -15,8 +15,8 @@ icon: glyphicon-heart
 
 * email：[huwen_hua@163.com](mailto:{{ site.email }})
 * QQ：794160291
-* CSDN-Blog (http://blog.huwenhua.net) (基本不用了-)
-* 个人网站: (http:/www.huwenhua.net)
+* CSDN-Blog: [点击去看看](http://blog.huwenhua.net) (基本不用了-)
+* 个人网站: [点击去瞅瞅](http:/www.huwenhua.net)
 
 ---
 
