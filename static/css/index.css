@@ -6,6 +6,8 @@ body {
 	background-image: url(http://7q5cdt.com1.z0.glb.clouddn.com/bg-canvas_bg.jpg);
     font-family: 'Microsoft YaHei', 'Helvetica','Arial','SimHei', sans-serif;
 }
+
+
 article p{
 	/*text-indent: 2em;*/
 }
@@ -220,7 +222,7 @@ footer{
 	min-height: 50px;
 	line-height: 50px;
 	margin-top: 80px;
-	background: #3f4850;
+	background: #333;
 	color: #aaa;
 	text-align: center;
 
@@ -229,10 +231,9 @@ footer{
 	-o-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 	box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 }
-footer a:link {color: #aaa}		/* 未访问的链接 */
-footer a:visited {color: #888}	/* 已访问的链接 */
-footer a:hover {color: #bbb;text-decoration: none;}	/* 鼠标移动到链接上 */
-footer a:active {color: #bbb}	/* 选定的链接 */
+footer a:link {color: #aaa}
+footer a:visited {color: #888}
+footer a:hover {color: #fff;text-decoration: none;}
 footer .point{
 	margin: 0 8px;
 }
