@@ -14,7 +14,7 @@ icon: glyphicon-heart
 ### 联系我
 
 * email：[huwen_hua@163.com](mailto:{{ site.email }})
-* QQ：794160291(http://sighttp.qq.com/msgrd?v=1&uin=794160291) ←猛戳Q我
+* QQ：[794160291](http://sighttp.qq.com/msgrd?v=1&uin=794160291) ←猛戳Q我
 * CSDN-Blog: [点击去看看](http://blog.huwenhua.net) (基本不用了-)
 * 个人网站: [点击去瞅瞅](http://www.huwenhua.net)
 
