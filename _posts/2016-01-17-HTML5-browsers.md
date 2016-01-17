@@ -24,9 +24,10 @@ HTML5 定了 8 个新的 HTML 语义（semantic） 元素。所有这些元素�
 为了能让旧版本的浏览器正确显示这些元素，你可以设置 CSS 的 `display` 属性值为 `block`:
 
     css
-header, section, footer, aside, nav, main, article, figure {
+
+    header, section, footer, aside, nav, main, article, figure {
     display: block; 
-}
+    }
     
 
 ### 为 HTML 添加新元素
@@ -35,7 +36,8 @@ header, section, footer, aside, nav, main, article, figure {
 该实例向 HTML 添加的新的元素，并为该元素定义样式，元素名为 `<myHero>` ：
 
     html
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html>
 
 <head>
@@ -61,7 +63,7 @@ header, section, footer, aside, nav, main, article, figure {
 <myHero>我的第一个新元素</myHero>
 
 </body>
-</html>
+    </html>
     
 
 > JavaScript 语句 document.createElement("myHero") 是为了为 IE 浏览器添加新的元素。
@@ -74,6 +76,7 @@ header, section, footer, aside, nav, main, article, figure {
 幸运的是， Sjoerd Visscher 创建了 "HTML5 Enabling JavaScript", **"shiv"**:
     
     html
+
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -83,6 +86,7 @@ header, section, footer, aside, nav, main, article, figure {
 注意：国内用户请使用百度静态资源库（Google 资源库在国内不稳定）：
 
     html
+
 <!--[if lt IE 9]>
   <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
 <![endif]-->
@@ -93,7 +97,7 @@ header, section, footer, aside, nav, main, article, figure {
 ### 完美的 Shiv 解决方案
 
     html
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 
 <head>
@@ -106,14 +110,14 @@ header, section, footer, aside, nav, main, article, figure {
 
 <body>
 
-<h1>我的第一篇文章</h1>
+    <h1>我的第一篇文章</h1>
 
-<article>
+    <article>
 London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
-</article>
+    </article>
 
 </body>
-</html>
+    </html>
     
 
 
