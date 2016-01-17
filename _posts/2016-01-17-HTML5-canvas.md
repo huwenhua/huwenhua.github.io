@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML5 基础教程-canvas"
-date:   2016-10-16 21:30:20
+date:   2015-10-16 21:30:20
 categories: HTML5
 ---
 
@@ -12,7 +12,6 @@ categories: HTML5
 `<canvas>` 标签定义图形，比如图表和其他图像，您必须使用脚本来绘制图形。
 在画布上（Canvas）画一个红色矩形，渐变矩形，彩色矩形，和一些彩色的文字。
 
-![Canvas](http://www.devdoc.me/uploads/html5/images/canvas_1.png)
 
 ### 什么是 Canvas?
 
@@ -22,7 +21,7 @@ HTML5 `<canvas>` 元素用于图形的绘制，通过脚本 (通常是JavaScript
 
 ### 浏览器支持
 
-![浏览器](http://www.devdoc.me/uploads/html5/images/browser.png)
+
 
 Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持 `<canvas>` 元素.
 
@@ -36,48 +35,48 @@ Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持 `<canvas>` 元�
 
 `<canvas>`简单实例如下:
 
-```html
+    html
 <canvas id="myCanvas" width="200" height="100"></canvas>
-```
+    
 
 > **注意:** 标签通常需要指定一个 `id` 属性 (脚本中经常引用), `width` 和 `height` 属性定义的画布的大小.  
 > **提示:** 你可以在HTML页面中使用多个 `<canvas>` 元素.
 
 使用 style 属性来添加边框:
 
-```html
+    html
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
 </canvas>
-```
+    
 
 ### 使用 JavaScript 来绘制图像
 
 canvas 元素本身是没有绘图能力的。所有的绘制工作必须在 JavaScript 内部完成：
 
-```html
+    html
 <script>
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 ctx.fillStyle="#FF0000";
 ctx.fillRect(0,0,150,75);
 </script>
-```
+    
 
 **实例解析:**
 
 首先，找到 `<canvas>` 元素:
-```javascript
+    javascript
 var c=document.getElementById("myCanvas");
-```
+    
 然后，创建 context 对象：
-```javascript
+    javascript
 var ctx=c.getContext("2d");
-```
+    
 下面的两行代码绘制一个红色的矩形：
-```javascript
+    javascript
 ctx.fillStyle="#FF0000";
 ctx.fillRect(0,0,150,75);
-```
+    
 
 设置`fillStyle`属性可以是CSS颜色，渐变，或图案。`fillStyle` 默认设置是`#000000`（黑色）。
 `fillRect(x,y,width,height)` 方法定义了矩形当前的填充方式。
@@ -101,15 +100,14 @@ canvas 的左上角坐标为 (0,0)
 **实例：**  
 定义开始坐标(0,0), 和结束坐标 (200,100). 然后使用 stroke() 方法来绘制线条:
 
-![绘制线条](http://www.devdoc.me/uploads/html5/images/shili_1.png)
 
-```javascript
+    javascript
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 ctx.moveTo(0,0);
 ctx.lineTo(200,100);
 ctx.stroke();
-```
+    
 
 在`canvas`中绘制圆形, 我们将使用以下方法:
 
@@ -120,15 +118,14 @@ ctx.stroke();
 **实例：**  
 使用 `arc()` 方法 绘制一个圆:
 
-![绘制一个圆](http://www.devdoc.me/uploads/html5/images/shili_2.png)
 
-```javascript
+    javascript
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 ctx.beginPath();
 ctx.arc(95,50,40,0,2*Math.PI);
 ctx.stroke();
-```
+    
 
 ### Canvas - 文本
 
@@ -145,26 +142,25 @@ ctx.stroke();
 
 ![文字实心](http://www.devdoc.me/uploads/html5/images/shili_3.png)
 
-```javascript
+    javascript
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 ctx.font="30px Arial";
 ctx.fillText("Hello World",10,50);
-```
+    
 
 使用 `strokeText()`:
 
 **实例：**  
 使用 "Arial" 字体在画布上绘制一个高 30px 的文字（空心）：
 
-![文字空心](http://www.devdoc.me/uploads/html5/images/shili_4.png)
 
-```javascript
+    javascript
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 ctx.font="30px Arial";
 ctx.strokeText("Hello World",10,50);
-```
+    
 
 ### Canvas - 渐变
 
@@ -185,7 +181,7 @@ ctx.strokeText("Hello World",10,50);
 
 ![渐变填充矩形](http://www.devdoc.me/uploads/html5/images/shili_5.png)
 
-```javascript
+    javascript
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 
@@ -197,7 +193,7 @@ grd.addColorStop(1,"white");
 // Fill with gradient
 ctx.fillStyle=grd;
 ctx.fillRect(10,10,150,80);
-```
+    
 
 使用 `createRadialGradient()`:
 
@@ -205,8 +201,9 @@ ctx.fillRect(10,10,150,80);
 创建一个径向/圆渐变。使用渐变填充矩形：
 
 ![渐变填充矩形](http://www.devdoc.me/uploads/html5/images/shili_6.png)
-
-```javascript
+ 
+ 
+    javascript
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 
@@ -218,7 +215,7 @@ grd.addColorStop(1,"white");
 // Fill with gradient
 ctx.fillStyle=grd;
 ctx.fillRect(10,10,150,80);
-```
+    
 
 ### Canvas - 图像
 
@@ -228,14 +225,13 @@ ctx.fillRect(10,10,150,80);
 
 **使用图像：**
 
-![使用画像](http://www.devdoc.me/uploads/html5/images/shili_7.jpg)
 
 **实例：**  
 把一幅图像放置到画布上：
 
-```javascript
+    javascript
 var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 var img=document.getElementById("scream");
 ctx.drawImage(img,10,10);
-```
+    
