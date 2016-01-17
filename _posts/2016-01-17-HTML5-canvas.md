@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "HTML5 基础教程-canvas"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
+
 `<canvas>` 标签定义图形，比如图表和其他图像，您必须使用脚本来绘制图形。
 在画布上（Canvas）画一个红色矩形，渐变矩形，彩色矩形，和一些彩色的文字。
 

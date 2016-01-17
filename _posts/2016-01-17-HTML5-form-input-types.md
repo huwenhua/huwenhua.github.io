@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "HTML5 基础教程-Input类型"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
+
 ### HTML5 新的 Input 类型
 
 HTML5 拥有多个新的表单输入类型。这些新特性提供了更好的输入控制和验证。  

@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "HTML5 基础教程-新元素"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
+
 ### HTML5 新元素
 
 自1999年以后HTML 4.01 已经改变了很多,今天，在HTML 4.01中的几个已经被废弃，这些元素在HTML5中已经被删除或重新定义。

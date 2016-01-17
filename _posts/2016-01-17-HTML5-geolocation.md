@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "HTML5 基础教程-Geolocation（地理定位）"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
+
 HTML5 Geolocation（地理定位）用于获得用户的地理位置。
 鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。
 

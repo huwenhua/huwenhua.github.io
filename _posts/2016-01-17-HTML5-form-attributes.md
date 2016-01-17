@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "HTML5 基础教程-表单属性"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
+
 ### HTML5 新的表单属性
 
 HTML5 的 `<form>` 和 `<input>` 标签添加了几个新属性.

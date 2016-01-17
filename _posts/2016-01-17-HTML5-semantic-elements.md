@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "HTML5 基础教程-语义元素"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
+
 ### 什么是语义元素?
 
 一个语义元素能够清楚的描述其意义给浏览器和开发者。  

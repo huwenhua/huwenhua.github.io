@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "HTML5 基础教程-拖放"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
+
 拖放（Drag 和 drop）是 HTML5 标准的组成部分。
 拖放是一种常见的特性，即抓取对象以后拖到另一个位置。
 在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。

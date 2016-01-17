@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "HTML5 基础教程-浏览器支持"
+date:   2016-10-16 21:30:20
+categories: HTML5
+---
+
+* content
+{:toc}
+
 > 你可以让一些较早的浏览器（不支持HTML5）支持 HTML5。
 
 ### HTML5 浏览器支持
