@@ -24,9 +24,8 @@ HTML5 定了 8 个新的 HTML 语义（semantic） 元素。所有这些元素�
 为了能让旧版本的浏览器正确显示这些元素，你可以设置 CSS 的 `display` 属性值为 `block`:
 
     css
-
     header, section, footer, aside, nav, main, article, figure {
-    display: block; 
+        display: block; 
     }
     
 
@@ -36,33 +35,32 @@ HTML5 定了 8 个新的 HTML 语义（semantic） 元素。所有这些元素�
 该实例向 HTML 添加的新的元素，并为该元素定义样式，元素名为 `<myHero>` ：
 
     html
-
     <!DOCTYPE html>
-<html>
+    <html>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Styling the article element</title>
-  <script>document.createElement("myHero")</script>
-  <style>
-      myHero {
-        display:block;
-        background-color:#ddd;
-        padding: 50px;
-        font-size: 30px;
-      }  
-  </style>
-</head>
+    <head>
+      <meta charset="UTF-8">
+      <title>Styling the article element</title>
+      <script>document.createElement("myHero")</script>
+      <style>
+          myHero {
+            display:block;
+            background-color:#ddd;
+            padding: 50px;
+            font-size: 30px;
+          }  
+      </style>
+    </head>
 
-<body>
+    <body>
 
-<h1>我的第一个标题</h1>
+    <h1>我的第一个标题</h1>
 
-<p>我的第一个段落。</p>
+    <p>我的第一个段落。</p>
 
-<myHero>我的第一个新元素</myHero>
+    <myHero>我的第一个新元素</myHero>
 
-</body>
+    </body>
     </html>
     
 
@@ -77,9 +75,9 @@ HTML5 定了 8 个新的 HTML 语义（semantic） 元素。所有这些元素�
     
     html
 
-<!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     
 
 以上代码是一个注释，作用是在 IE 浏览器的版本小于 IE9 时将读取 html5.js 文件，并解析它。
@@ -87,9 +85,9 @@ HTML5 定了 8 个新的 HTML 语义（semantic） 元素。所有这些元素�
 
     html
 
-<!--[if lt IE 9]>
-  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
     
 
 针对IE浏览器html5shiv 是比较好的解决方案。html5shiv主要解决HTML5提出的新的元素不被IE6-8识别，这些新元素不能作为父节点包裹子元素，并且不能应用CSS样式。
@@ -98,25 +96,25 @@ HTML5 定了 8 个新的 HTML 语义（semantic） 元素。所有这些元素�
 
     html
     <!DOCTYPE html>
-<html>
+    <html>
 
-<head>
-  <meta charset="UTF-8">
-    <title>Styling HTML5</title>
-  <!--[if lt IE 9]>
-  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
-  <![endif]-->
-</head>
+    <head>
+      <meta charset="UTF-8">
+        <title>Styling HTML5</title>
+      <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+      <![endif]-->
+    </head>
 
-<body>
+    <body>
 
-    <h1>我的第一篇文章</h1>
+        <h1>我的第一篇文章</h1>
 
     <article>
 London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
     </article>
 
-</body>
+    </body>
     </html>
     
 
