@@ -47,7 +47,7 @@ Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持拖动。
     </script>
     </head>
     <body>
-	<p>拖动 DevDoc 图片到矩形框中:</p>
+	<p>拖动下面 huwenhua 图片到矩形框中试试~</p>
 	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 	<br>
 	<img id="drag1" src="dev_logo.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
@@ -81,7 +81,7 @@ ev.target.appendChild(document.getElementById(data));
 </script>
 </head>
 <body>
-<p>拖动 DevDoc 图片到矩形框中:</p>
+<p>拖动下面 huwenhua 图片到矩形框中试试~</p>
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 <br>
 <img id="drag1" src="{{"/css/pics/wen_03.png" | prepend:site.baseurl}}" draggable="true" ondragstart="drag(event)" width="336" height="69">
