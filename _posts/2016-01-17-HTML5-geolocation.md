@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML5 基础教程-Geolocation（地理定位）"
-date:   2016-10-16 21:30:20
+date:   2015-10-16 11:30:20
 categories: HTML5
 ---
 
@@ -14,8 +14,6 @@ HTML5 Geolocation（地理定位）用于获得用户的地理位置。
 
 ### 浏览器支持
 
-![浏览器](http://www.devdoc.me/uploads/html5/images/browser.png)
-
 Internet Explorer 9+, Firefox, Chrome, Safari 和 Opera 支持Geolocation（地理定位）.
 > **注意:** Geolocation（地理定位）对于拥有 GPS 的设备，比如 iPhone，地理定位更加精确。
 
@@ -24,22 +22,20 @@ Internet Explorer 9+, Firefox, Chrome, Safari 和 Opera 支持Geolocation（地�
 请使用 `getCurrentPosition()` 方法来获得用户的位置。  
 下例是一个简单的地理定位实例，可返回用户位置的经度和纬度:
 
-```javascript
-var x=document.getElementById("demo");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  }
-  else{
-    x.innerHTML="该浏览器不支持获取地理位置。";
-  }
-}
-function showPosition(position) {
-  x.innerHTML="纬度: " + position.coords.latitude + 
-  "<br>经度: " + position.coords.longitude;	
-}
-```
-[去看一下效果](http://www.devdoc.me/uploads/html5/geolocation.html)
+javascript
+
+    var x=document.getElementById("demo");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      }else{
+        x.innerHTML="该浏览器不支持获取地理位置。";
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML="纬度: " + position.coords.latitude + 
+      "<br>经度: " + position.coords.longitude;	
+    }
 
 - 检测是否支持地理定位
 - 如果支持，则运行 `getCurrentPosition()` 方法。如果不支持，则向用户显示一段消息。
@@ -52,26 +48,25 @@ function showPosition(position) {
 
 `getCurrentPosition()` 方法的第二个参数用于处理错误。它规定当获取用户位置失败时运行的函数：
 
-```javascript
-function showError(error) {
-  switch(error.code) {
-    case error.PERMISSION_DENIED:
-      x.innerHTML="用户拒绝对获取地理位置的请求。"
-      break;
-    case error.POSITION_UNAVAILABLE:
-      x.innerHTML="位置信息是不可用的。"
-      break;
-    case error.TIMEOUT:
-      x.innerHTML="请求用户地理位置超时。"
-      break;
-    case error.UNKNOWN_ERROR:
-      x.innerHTML="未知错误。"
-      break;
-  }
-}
-```
+javascript
 
-[去看一下效果](http://www.devdoc.me/uploads/html5/geolocation_error.html)
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML="用户拒绝对获取地理位置的请求。"
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML="位置信息是不可用的。"
+          break;
+        case error.TIMEOUT:
+          x.innerHTML="请求用户地理位置超时。"
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML="未知错误。"
+          break;
+      }
+    }
+
 
 错误代码：
 
@@ -85,28 +80,28 @@ function showError(error) {
 
 谷歌地图：
 
-```javascript
-function showPosition(position) {
-  var latlon=position.coords.latitude+","+position.coords.longitude;
+javascript
 
-  var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
-  +latlon+"&zoom=14&size=400x300&sensor=false";
-  document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
-}
-```
+    function showPosition(position) {
+      var latlon=position.coords.latitude+","+position.coords.longitude;
+
+      var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
+      +latlon+"&zoom=14&size=400x300&sensor=false";
+      document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+    }
+
 
 百度地图：
 
-```javascript
-function showPosition(position) {
-  var latlon=position.coords.latitude+","+position.coords.longitude;
+javascript
 
-  var img_url="http://api.map.baidu.com/staticimage?center="
-  +latlon+"&width=300&height=200&zoom=14";
-  document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
-}
-```
-[去看一下效果](http://www.devdoc.me/uploads/html5/geolocation_map.html)
+    function showPosition(position) {
+      var latlon=position.coords.latitude+","+position.coords.longitude;
+    
+      var img_url="http://api.map.baidu.com/staticimage?center="
+      +latlon+"&width=300&height=200&zoom=14";
+      document.getElementById("mapholder").innerHTML="<img src='"+img_url+"'>";
+    }
 
 在上例中，我们使用返回的经纬度数据在地图中显示位置（使用静态图像）。
 
@@ -172,17 +167,17 @@ function showPosition(position) {
 
 下面的例子展示 `watchPosition()` 方法。您需要一台精确的 GPS 设备来测试该例（比如 iPhone）：
 
-```javascript
-var x=document.getElementById("demo");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition);
-  }
-  else{x.innerHTML="该浏览器不支持获取地理位置。";}
-}
-function showPosition(position) {
-  x.innerHTML="纬度: " + position.coords.latitude + 
-  "<br>经度: " + position.coords.longitude;	
-}
-```
-[去看一下效果](http://www.devdoc.me/uploads/html5/geolocation_watchposition.html)
+javascript
+
+    var x=document.getElementById("demo");
+    function getLocation() {
+      if (navigator.geolocation) {
+	navigator.geolocation.watchPosition(showPosition);
+      }else{
+	x.innerHTML="该浏览器不支持获取地理位置。";
+      }
+    }
+    function showPosition(position) {
+      x.innerHTML="纬度: " + position.coords.latitude + 
+      "<br>经度: " + position.coords.longitude;	
+    }

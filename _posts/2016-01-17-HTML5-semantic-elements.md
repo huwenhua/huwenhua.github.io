@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML5 基础教程-语义元素"
-date:   2016-10-16 21:30:20
+date:   2015-10-16 12:30:20
 categories: HTML5
 ---
 
@@ -17,7 +17,6 @@ categories: HTML5
 
 ### 浏览器支持
 
-![浏览器](http://www.devdoc.me/uploads/html5/images/browser.png)
 
 Internet Explorer 9+, Firefox, Chrome, Safari 和 Opera 支持语义元素。
 > **注意:** Internet Explorer 8及更早版本不支持该元素. 但是文章底部提供了兼容的解决方法.
@@ -36,19 +35,19 @@ HTML5提供了新的语义元素来明确一个Web页面的不同部分:
 - &lt;figure&gt;
 - &lt;footer&gt;
 
-![img_sem_elements](http://www.devdoc.me/uploads/html5/images/img_sem_elements.gif)
 
 ### HTML5 &lt;section&gt; 元素
 
 `<section>` 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。  
 根据W3C HTML5文档: section 包含了一组内容及其标题。
 
-```html
-<section>
-  <h1>WWF</h1>
-  <p>The World Wide Fund for Nature (WWF) is....</p>
-</section>
-```
+html
+
+    <section>
+      <h1>WWF</h1>
+      <p>The World Wide Fund for Nature (WWF) is....</p>
+    </section>
+
 
 ### HTML5 &lt;article&gt; 元素
 
@@ -60,41 +59,44 @@ HTML5提供了新的语义元素来明确一个Web页面的不同部分:
 - News story
 - Comment
 
-```html
-<article>
-  <h1>Internet Explorer 9</h1>
-  <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to
-  the  public on March 14, 2011 at 21:00 PDT.....</p>
-</article>
-```
+html
+
+    <article>
+      <h1>Internet Explorer 9</h1>
+      <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to
+      the  public on March 14, 2011 at 21:00 PDT.....</p>
+    </article>
+
 
 ### HTML5 &lt;nav&gt; 元素
 
 `<nav>` 标签定义导航链接的部分。  
 `<nav>` 元素用于定义页面的导航链接部分区域，但是，不是所有的链接都需要包含在 `<nav>` 元素中!
 
-```html
-<nav>
-<a href="/html/">HTML</a> |
-<a href="/css/">CSS</a> |
-<a href="/js/">JavaScript</a> |
-<a href="/jquery/">jQuery</a>
-</nav>
-```
+html
+
+    <nav>
+	    <a href="/html/">HTML</a> |
+	    <a href="/css/">CSS</a> |
+	    <a href="/js/">JavaScript</a> |
+	    <a href="/jquery/">jQuery</a>
+    </nav>
+
 
 ### HTML5 &lt;aside&gt; 元素
 
 `<aside>` 标签定义页面主区域内容之外的内容（比如侧边栏）。  
 aside 标签的内容应与主区域的内容相关.
 
-```html
-<p>My family and I visited The Epcot center this summer.</p>
+html
 
-<aside>
-  <h4>Epcot Center</h4>
-  <p>The Epcot Center is a theme park in Disney World, Florida.</p>
-</aside>
-```
+    <p>My family and I visited The Epcot center this summer.</p>
+    
+    <aside>
+      <h4>Epcot Center</h4>
+      <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+    </aside>
+
 
 ### HTML5 &lt;header&gt; 元素
 
@@ -103,16 +105,17 @@ aside 标签的内容应与主区域的内容相关.
 在页面中你可以使用多个 `<header>` 元素.  
 以下实例定义了文章的头部:
 
-```html
-<article>
-  <header>
-    <h1>Internet Explorer 9</h1>
-    <p><time pubdate datetime="2011-03-15"></time></p>
-  </header>
-  <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to
-  the  public on March 14, 2011 at 21:00 PDT.....</p>
-</article>
-```
+html
+
+    <article>
+      <header>
+        <h1>Internet Explorer 9</h1>
+        <p><time pubdate datetime="2011-03-15"></time></p>
+      </header>
+      <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to
+      the  public on March 14, 2011 at 21:00 PDT.....</p>
+    </article>
+
 
 ### HTML5 &lt;footer&gt; 元素
 
@@ -121,12 +124,13 @@ aside 标签的内容应与主区域的内容相关.
 一个页脚通常包含文档的作者，著作权信息，链接的使用条款，联系信息等  
 文档中你可以使用多个 `<footer>` 元素.
 
-```html
-<footer>
-  <p>Posted by: Hege Refsnes</p>
-  <p><time pubdate datetime="2012-03-01"></time></p>
-</footer>
-```
+html
+
+    <footer>
+      <p>Posted by: Hege Refsnes</p>
+      <p><time pubdate datetime="2012-03-01"></time></p>
+    </footer>
+
 
 ### HTML5 &lt;figure&gt; 和 &lt;figcaption&gt; 元素
 
@@ -135,23 +139,24 @@ aside 标签的内容应与主区域的内容相关.
 `<figcaption>` 标签定义 `<figure>` 元素的标题.  
 `<figcaption>` 元素应该被置于 "figure" 元素的第一个或最后一个子元素的位置。
 
-```html
-<figure>
-  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
-  <figcaption>Fig1. - The Pulpit Pock, Norway.</figcaption>
-</figure>
-```
+html
+
+    <figure>
+      <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+      <figcaption>Fig1. - The Pulpit Pock, Norway.</figcaption>
+    </figure>
+
 
 ### 我们可以开始使用这些语义元素吗?
 
 以上的元素都是块元素(除了 `<figcaption>` ).  
 为了让这些块及元素在所有版本的浏览器中生效，你需要在样式表文件中设置一下属性 (以下样式代码可以让旧版本浏览器支持本章介绍的块级元素):
 
-```css
-header, section, footer, aside, nav, article, figure { 
-display: block; 
-}
-```
+css
+
+    header, section, footer, aside, nav, article, figure { 
+        display: block; 
+    }
 
 ### Internet Explorer 8 及更早IE版本中的问题
 
@@ -159,10 +164,10 @@ IE8 及更早IE版本无法在这些元素中渲染CSS效果，以至于你不�
 **解决办法:** 可以使用HTML5 Shiv Javascript脚本来解决IE的兼容问题。HTML5 Shiv下载地址：http://code.google.com/p/html5shiv/
 下载后，将以下代码放入的网页中：
 
-```html
-<!--[if lt IE 9]>
-<script src="html5shiv.js"></script>
-<![endif]-->
-```
+html
+
+    <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+    <![endif]-->
 
 以上代码在浏览器小于IE9版本时会加载html5shiv.js文件. 你必须将其放置于 `<head>` 元素中，因为 IE浏览器需要在头部加载后渲染这些HTML5的新元素
