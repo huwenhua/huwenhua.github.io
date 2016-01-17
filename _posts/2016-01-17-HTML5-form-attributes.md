@@ -48,18 +48,18 @@ HTML5 的 `<form>` 和 `<input>` 标签添加了几个新属性.
 **实例**  
 HTML form 中开启 autocomplete (一个 input 字段关闭 autocomplete ):
 
-```html
-<form action="demo-form.php" autocomplete="on">
-  First name:<input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br>
-  E-mail: <input type="email" name="email" autocomplete="off"><br>
-  <input type="submit">
-</form>
-```
+html
+
+    <form action="demo-form.php" autocomplete="on">
+      First name:<input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      E-mail: <input type="email" name="email" autocomplete="off"><br>
+      <input type="submit">
+    </form>
+
 
 > **提示:** 某些浏览器中，您可能需要启用自动完成功能，以使该属性生效。
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_firefox_chrome_safari.png)
 
 ---
 
@@ -71,14 +71,13 @@ HTML form 中开启 autocomplete (一个 input 字段关闭 autocomplete ):
 **实例**  
 无需验证提交的表单数据
 
-```html
-<form action="demo-form.php" novalidate>
-  E-mail: <input type="email" name="user_email">
-  <input type="submit">
-</form>
-```
+    html
+    <form action="demo-form.php" novalidate>
+      E-mail: <input type="email" name="user_email">
+      <input type="submit">
+    </form>
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_firefox_opera_chrome.png)
+
 
 ---
 
@@ -90,11 +89,10 @@ HTML form 中开启 autocomplete (一个 input 字段关闭 autocomplete ):
 **实例**  
 让 "First name" input 输入域在页面载入时自动聚焦：
 
-```html
-First name:<input type="text" name="fname" autofocus>
-```
+html
+    First name:<input type="text" name="fname" autofocus>
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
+
 
 ---
 
@@ -106,16 +104,15 @@ First name:<input type="text" name="fname" autofocus>
 **实例**  
 位于 `form` 表单外的 `input` 字段引用了 HTML form (该 input 表单仍然属于form表单的一部分):
 
-```html
-<form action="demo-form.php" id="form1">
-  First name: <input type="text" name="fname"><br>
-  <input type="submit" value="Submit">
-</form>
+html
+    <form action="demo-form.php" id="form1">
+      First name: <input type="text" name="fname"><br>
+      <input type="submit" value="Submit">
+    </form>
 
-Last name: <input type="text" name="lname" form="form1">
-```
+    Last name: <input type="text" name="lname" form="form1">
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/firefox_chrome_safari_opera.png)
+
 
 ---
 
@@ -128,17 +125,15 @@ The formaction 属性会覆盖 `<form>` 元素中的action属性.
 **实例**  
 以下HTMLform表单包含了两个不同地址的提交按钮：
 
-```html
-<form action="demo-form.php">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br>
-  <input type="submit" value="Submit"><br>
-  <input type="submit" formaction="demo-admin.php"
-  value="Submit as admin">
-</form>
-```
+    html
+    <form action="demo-form.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit"><br>
+      <input type="submit" formaction="demo-admin.php"
+      value="Submit as admin">
+    </form>
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
 
 ---
 
@@ -151,16 +146,13 @@ The formaction 属性会覆盖 `<form>` 元素中的action属性.
 **实例**  
 第一个提交按钮已默认编码发送表单数据，第二个提交按钮以 `multipart/form-data` 编码格式发送表单数据:
 
-```html
-<form action="demo-post_enctype.php" method="post">
-  First name: <input type="text" name="fname"><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formenctype="multipart/form-data"
-  value="Submit as Multipart/form-data">
-</form>
-```
-
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
+html
+    <form action="demo-post_enctype.php" method="post">
+      First name: <input type="text" name="fname"><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formenctype="multipart/form-data"
+      value="Submit as Multipart/form-data">
+    </form>
 
 ---
 
@@ -173,17 +165,14 @@ The formaction 属性会覆盖 `<form>` 元素中的action属性.
 **实例**  
 重新定义表单提交方式实例:
 
-```html
-<form action="demo-form.php" method="get">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formmethod="post" formaction="demo-post.php"
-  value="Submit using POST">
-</form>
-```
-
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
+html
+    <form action="demo-form.php" method="get">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formmethod="post" formaction="demo-post.php"
+      value="Submit using POST">
+    </form>
 
 ---
 
@@ -197,15 +186,13 @@ The formaction 属性会覆盖 `<form>` 元素中的action属性.
 **实例**  
 两个提交按钮的表单(使用与不适用验证 ):
 
-```html
-<form action="demo-form.php">
-  E-mail: <input type="email" name="userid"><br>
-  <input type="submit" value="Submit"><br>
-  <input type="submit" formnovalidate value="Submit without validation">
-</form>
-```
+html
+    <form action="demo-form.php">
+      E-mail: <input type="email" name="userid"><br>
+      <input type="submit" value="Submit"><br>
+      <input type="submit" formnovalidate value="Submit without validation">
+    </form>
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_firefox_opera_chrome.png)
 
 ---
 
@@ -218,17 +205,15 @@ The formtarget 属性覆盖 `<form>` 元素的 `target` 属性.
 **实例**  
 两个提交按钮的表单, 在不同窗口中显示:
 
-```html
-<form action="demo-form.php">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br>
-  <input type="submit" value="Submit as normal">
-  <input type="submit" formtarget="_blank"
-  value="Submit to a new window">
-</form>
-```
+html
+    <form action="demo-form.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit as normal">
+      <input type="submit" formtarget="_blank"
+      value="Submit to a new window">
+    </form>
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
 
 ---
 
@@ -241,11 +226,9 @@ The formtarget 属性覆盖 `<form>` 元素的 `target` 属性.
 **实例**  
 定义了一个图像提交按钮, 使用了 height 和 width 属性:
 
-```html
-<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
-```
+html
+    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
 
 ---
 
@@ -256,19 +239,17 @@ list 属性规定输入域的 datalist。datalist 是输入域的选项列表。
 **实例**  
 在 `<datalist>` 中预定义 `<input>` 值:
 
-```html
-<input list="browsers">
+html
+    <input list="browsers">
 
-<datalist id="browsers">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-  <option value="Chrome">
-  <option value="Opera">
-  <option value="Safari">
-</datalist>
-```
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_firefox_opera_chrome.png)
 
 ---
 
@@ -280,18 +261,16 @@ list 属性规定输入域的 datalist。datalist 是输入域的选项列表。
 **实例**  
 `<input>` 元素最小值与最大值设置:
 
-```html
-Enter a date before 1980-01-01:
-<input type="date" name="bday" max="1979-12-31">
+html
 
-Enter a date after 2000-01-01:
-<input type="date" name="bday" min="2000-01-02">
+    Enter a date before 1980-01-01:
+    <input type="date" name="bday" max="1979-12-31">
 
-Quantity (between 1 and 5):
-<input type="number" name="quantity" min="1" max="5">
-```
+    Enter a date after 2000-01-01:
+    <input type="date" name="bday" min="2000-01-02">
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_opera_chrome_safari.png)
+    Quantity (between 1 and 5):
+    <input type="number" name="quantity" min="1" max="5">
 
 ---
 
@@ -304,11 +283,10 @@ Quantity (between 1 and 5):
 **实例**  
 上传多个文件:
 
-```html
-Select images: <input type="file" name="img" multiple>
-```
+html
+    Select images: <input type="file" name="img" multiple>
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
+
 
 ---
 
@@ -319,12 +297,9 @@ Select images: <input type="file" name="img" multiple>
 
 **实例**  
 下面的例子显示了一个只能包含三个字母的文本域（不含数字及特殊字符）：
+html
 
-```html
-Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
-```
-
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_firefox_opera_chrome.png)
+    Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
 
 ---
 
@@ -337,11 +312,9 @@ Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title
 **实例**  
 input 字段提示文本:
 
-```html
-<input type="text" name="fname" placeholder="First name">
-```
+html
+    <input type="text" name="fname" placeholder="First name">
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/all_browser.png)
 
 ---
 
@@ -354,11 +327,8 @@ input 字段提示文本:
 **实例**  
 不能为空的input字段:
 
-```html
-Username: <input type="text" name="usrname" required>
-```
-
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_firefox_opera_chrome.png)
+html
+    Username: <input type="text" name="usrname" required>
 
 ---
 
@@ -372,10 +342,9 @@ Username: <input type="text" name="usrname" required>
 **实例**  
 规定input step步长为3:
 
-```html
-<input type="number" name="points" step="3">
-```
+html
+    <input type="number" name="points" step="3">
 
-![浏览器支持](http://www.devdoc.me/uploads/html5/images/ie_opera_chrome_safari.png)
 
 ---
+
