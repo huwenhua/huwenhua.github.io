@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML5 基础教程-表单元素"
-date:   2016-10-16 21:30:20
+date:   2015-10-16 21:30:20
 categories: HTML5
 ---
 
@@ -26,18 +26,18 @@ categories: HTML5
 **实例**  
 `<input>` 元素使用 `<datalist>` 预定义值:
 
-```html
-<input list="browsers">
+html
 
-<datalist id="browsers">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-  <option value="Chrome">
-  <option value="Opera">
-  <option value="Safari">
-</datalist>
-```
-[去看一下效果](http://www.devdoc.me/uploads/html5/datalist.html)
+    <input list="browsers">
+
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+
 
 ---
 
@@ -51,14 +51,13 @@ categories: HTML5
 **实例**  
 带有keygen字段的表单:
 
-```html
-<form action="demo_keygen.asp" method="get">
-用户名: <input type="text" name="usr_name">
-加密: <keygen name="security">
-<input type="submit">
-</form>
-```
-[去看一下效果](http://www.devdoc.me/uploads/html5/keygen.html)
+html
+
+    <form action="demo_keygen.asp" method="get">    
+        用户名: <input type="text" name="usr_name">
+        加密: <keygen name="security">
+    <input type="submit">
+    </form>
 
 ---
 
@@ -69,13 +68,12 @@ categories: HTML5
 **实例**  
 将计算结果显示在 `<output>` 元素:
 
-```html
-<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
-<input type="range" id="a" value="50">100 +
-<input type="number" id="b" value="50">=
-<output name="x" for="a b"></output>
-</form>
-```
-[去看一下效果](http://www.devdoc.me/uploads/html5/output.html)
+html
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100 +
+        <input type="number" id="b" value="50">=
+        <output name="x" for="a b"></output>
+    </form>
 
 ---
