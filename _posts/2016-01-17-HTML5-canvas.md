@@ -45,6 +45,7 @@ Internet Explorer 9+, Firefox, Opera, Chrome, 和 Safari 支持 `<canvas>` 元�
 使用 style 属性来添加边框:
 
     html
+
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
     </canvas>
     
@@ -55,10 +56,10 @@ canvas 元素本身是没有绘图能力的。所有的绘制工作必须在 Jav
 
     html
     <script>
-    var c=document.getElementById("myCanvas");
-    var ctx=c.getContext("2d");
-    ctx.fillStyle="#FF0000";
-    ctx.fillRect(0,0,150,75);
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	ctx.fillStyle="#FF0000";
+	ctx.fillRect(0,0,150,75);
     </script>
     
 
@@ -66,14 +67,17 @@ canvas 元素本身是没有绘图能力的。所有的绘制工作必须在 Jav
 
 首先，找到 `<canvas>` 元素:
     javascript
+
     var c=document.getElementById("myCanvas");
     
 然后，创建 context 对象：
     javascript
+
     var ctx=c.getContext("2d");
     
 下面的两行代码绘制一个红色的矩形：
     javascript
+
     ctx.fillStyle="#FF0000";
     ctx.fillRect(0,0,150,75);
     
@@ -102,6 +106,7 @@ canvas 的左上角坐标为 (0,0)
 
 
     javascript
+
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     ctx.moveTo(0,0);
@@ -120,6 +125,7 @@ canvas 的左上角坐标为 (0,0)
 
 
     javascript
+
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     ctx.beginPath();
@@ -142,6 +148,7 @@ canvas 的左上角坐标为 (0,0)
 
 
     javascript
+
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     ctx.font="30px Arial";
@@ -155,6 +162,7 @@ canvas 的左上角坐标为 (0,0)
 
 
     javascript
+
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     ctx.font="30px Arial";
@@ -179,6 +187,7 @@ canvas 的左上角坐标为 (0,0)
 创建一个线性渐变。使用渐变填充矩形：
 
     javascript
+
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
 
@@ -201,6 +210,7 @@ canvas 的左上角坐标为 (0,0)
  
  
     javascript
+
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
 
@@ -210,8 +220,8 @@ canvas 的左上角坐标为 (0,0)
     grd.addColorStop(1,"white");
 
 // Fill with gradient
-ctx.fillStyle=grd;
-ctx.fillRect(10,10,150,80);
+    ctx.fillStyle=grd;
+    ctx.fillRect(10,10,150,80);
     
 
 ### Canvas - 图像
@@ -227,6 +237,7 @@ ctx.fillRect(10,10,150,80);
 把一幅图像放置到画布上：
 
     javascript
+
     var c=document.getElementById("myCanvas");
     var ctx=c.getContext("2d");
     var img=document.getElementById("scream");
