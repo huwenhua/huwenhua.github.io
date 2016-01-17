@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML5 基础教程-表单属性"
-date:   2016-10-16 21:30:20
+date:   2015-10-16 21:30:20
 categories: HTML5
 ---
 
@@ -90,6 +90,7 @@ html
 让 "First name" input 输入域在页面载入时自动聚焦：
 
 html
+
     First name:<input type="text" name="fname" autofocus>
 
 
@@ -105,6 +106,7 @@ html
 位于 `form` 表单外的 `input` 字段引用了 HTML form (该 input 表单仍然属于form表单的一部分):
 
 html
+
     <form action="demo-form.php" id="form1">
       First name: <input type="text" name="fname"><br>
       <input type="submit" value="Submit">
@@ -126,6 +128,7 @@ The formaction 属性会覆盖 `<form>` 元素中的action属性.
 以下HTMLform表单包含了两个不同地址的提交按钮：
 
     html
+
     <form action="demo-form.php">
       First name: <input type="text" name="fname"><br>
       Last name: <input type="text" name="lname"><br>
@@ -147,6 +150,7 @@ The formaction 属性会覆盖 `<form>` 元素中的action属性.
 第一个提交按钮已默认编码发送表单数据，第二个提交按钮以 `multipart/form-data` 编码格式发送表单数据:
 
 html
+
     <form action="demo-post_enctype.php" method="post">
       First name: <input type="text" name="fname"><br>
       <input type="submit" value="Submit">
@@ -166,6 +170,7 @@ html
 重新定义表单提交方式实例:
 
 html
+
     <form action="demo-form.php" method="get">
       First name: <input type="text" name="fname"><br>
       Last name: <input type="text" name="lname"><br>
@@ -187,6 +192,7 @@ html
 两个提交按钮的表单(使用与不适用验证 ):
 
 html
+
     <form action="demo-form.php">
       E-mail: <input type="email" name="userid"><br>
       <input type="submit" value="Submit"><br>
@@ -206,6 +212,7 @@ The formtarget 属性覆盖 `<form>` 元素的 `target` 属性.
 两个提交按钮的表单, 在不同窗口中显示:
 
 html
+
     <form action="demo-form.php">
       First name: <input type="text" name="fname"><br>
       Last name: <input type="text" name="lname"><br>
@@ -227,6 +234,7 @@ html
 定义了一个图像提交按钮, 使用了 height 和 width 属性:
 
 html
+
     <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
 
 
@@ -240,6 +248,7 @@ list 属性规定输入域的 datalist。datalist 是输入域的选项列表。
 在 `<datalist>` 中预定义 `<input>` 值:
 
 html
+
     <input list="browsers">
 
     <datalist id="browsers">
@@ -284,6 +293,7 @@ html
 上传多个文件:
 
 html
+
     Select images: <input type="file" name="img" multiple>
 
 
@@ -313,6 +323,7 @@ html
 input 字段提示文本:
 
 html
+
     <input type="text" name="fname" placeholder="First name">
 
 
@@ -328,6 +339,7 @@ html
 不能为空的input字段:
 
 html
+
     Username: <input type="text" name="usrname" required>
 
 ---
@@ -343,6 +355,7 @@ html
 规定input step步长为3:
 
 html
+
     <input type="number" name="points" step="3">
 
 
