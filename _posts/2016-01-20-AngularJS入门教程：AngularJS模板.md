@@ -144,6 +144,8 @@ AngularJS的作用域理论非常重要：一个作用域可以视作模板、�
 
 - 确定把`toBe(3)`改成`toBe(4)`之后单元测试失败，然后重新跑一遍`./scripts/test.sh`脚本
 
+---
+
 ## 总结
 你现在拥有一个模型，视图，控制器分离的动态应用了，并且你随时进行了测试。现在，你可以进入到[步骤3][step_03]来为应用加入全文检索功能了。
 
@@ -157,3 +159,5 @@ AngularJS的作用域理论非常重要：一个作用域可以视作模板、�
 [官方主页]: http://pivotal.github.com/jasmine/
 [Jasmine Wiki]: https://github.com/pivotal/jasmine/wiki
 [JsTestDriver]: http://code.google.com/p/js-test-driver/
+
+
