@@ -41,16 +41,9 @@ Express是目前最流行的基于Node.js的Web开发框架，可以快速地搭
 运行 express -h 命令可得到全部参数和其说明
 
 	-V，--version输出版本号
-
 	-e，--ejs  添加EJS引擎的支持（默认为jade）
-	
-
 	-H,  --hogan 添加hogan.js引擎支持
-
-	
 	-c，--CSS <引擎名> 添加样式表<引擎名>的支持，支持的引擎有 less 、stylus 、compass（默认为纯CSS）
-
-	
 	-f， --force 如果有同名的项目目录，就会被覆盖。
 	
 
