@@ -19,18 +19,23 @@ Express是目前最流行的基于Node.js的Web开发框架，可以快速地搭
 
 例如：通过下面的命令，即可生成一个express项目，并进入到项目目录。
 
+
     $ express myapp & cd myapp
 
 	
 然后，运行下面命令安装依赖模块。
 
+
     $ npm install
 
+	
 这时，我们会发现项目目录下多了一个 node_modules 目录，这是刚刚下载的依赖模块。
 
 最后运行下面的命令即可运行：
 
+
     npm start
+
     
 通过浏览器访问 localhost:3000 即可访问到页面，只要几条命令即可完成项目模版，很快捷方便。    
 
