@@ -192,7 +192,7 @@ views/index.jade 动态模版
 
 这是使用express简单的编写一个web应用。
 
-具体Api去官网查看  [http://www.expressjs.com.cn][]
+具体Api去<a href="http://www.expressjs.com.cn" target="_blank">官网</a>查看  
 
 	
 ---
