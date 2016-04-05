@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "编写第一个Express应用"
-date:   2015-11-19 23:15:32
+date:   2015-11-20 23:15:32
 categories: Express
 ---
 
@@ -33,7 +33,7 @@ categories: Express
 	package.json   npm命令需要的描述信息
 
 
-####启动
+启动服务
 
 运行 npm start 启动程序，为什么能启动呢？你可以打开package.
 
@@ -190,7 +190,9 @@ views/index.jade 动态模版
 	
 重启服务去访问看结果	
 
+这是使用express简单的编写一个web应用。
 
+具体Api去官网查看  [http://www.expressjs.com.cn][]
 
 	
 ---
