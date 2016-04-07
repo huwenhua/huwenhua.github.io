@@ -2,7 +2,7 @@
 layout: post
 title:  "Grunt：任务自动管理工具"
 date:   2015-04-23
-categories: 任务自动管理工具
+categories: Grunt_Gulp
 ---
 
 * content
