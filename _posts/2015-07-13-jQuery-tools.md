@@ -720,16 +720,16 @@ $.ajax('myserver/uploads', {
 
 上面代码是将文件作为表单数据发送。除此之外，也可以直接发送文件。
 
-```javascript
 
-var file = $('#test-input')[0].files[0];
 
-$.ajax('myserver/uploads', {
-  method: 'POST',
-  contentType: file.type,
-  processData: false,
-  data: file
-});
+    var file = $('#test-input')[0].files[0];
+
+	$.ajax('myserver/uploads', {
+		method: 'POST',
+		contentType: file.type,
+		processData: false,
+		data: file
+	});
 
 	
 ---
